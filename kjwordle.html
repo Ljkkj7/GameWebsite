@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="kjwordle">
     <header>
         <div class="navbar">
             <ul class="nav">
@@ -21,4 +21,18 @@
             </ul>
         </div>
     </header>
+    <div class="wrapper">
+        <h1>Guess the Word</h1>
+        <div class="content">
+          <div class="inputs"></div>
+          <div class="details">
+            <p class="hint">Hint: <span></span></p>
+            <p class="guess-left">Remaining guesses: <span></span></p>
+            <p class="wrong-letter">Wrong letters: <span></span></p>
+          </div>
+          <button class="reset-btn">Reset Game</button>
+        </div>
+      </div>
+      <script src="scripts/words.js"></script>
+      <script src="scripts/guess.js"></script>
 </body>
